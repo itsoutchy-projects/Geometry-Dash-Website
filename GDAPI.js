@@ -34,6 +34,11 @@ export default class GDAPI {
         return response.text();
     }
 
+    /**
+     * Parse raw user data
+     * @param {string} data The user data
+     * @returns {User}
+     */
     parseUser(data) {
         const stringUtils = new StringUtils();
         let dat = stringUtils.SplitNum(data, ":");
