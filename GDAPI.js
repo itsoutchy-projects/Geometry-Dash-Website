@@ -20,7 +20,7 @@ export default class GDAPI {
         // xhr.send();
 
         let response = await fetch("http://www.boomlings.com/database/getGJUserInfo20.php/", {
-            method: "POST",
+            method: "POST", // post? strange but sure
             mode: "cors",
             "redirect": "follow",
             "User-Agent": "",
