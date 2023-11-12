@@ -1,0 +1,89 @@
+@font-face {
+    font-family: pusab;
+    src: url(PUSAB___.otf);
+}
+
+body {
+    text-align: center;
+    font-family: pusab;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    font-size: large;
+    margin: 0px;
+}
+
+.parrallax {
+    position: absolute;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3;
+    width: 100vw;
+    height: 131vh;
+    transform: translateZ(-3px) scale(4);
+}
+
+.parrallax-base {
+    transform: translateZ(0);
+}
+
+.parrallax-parent {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#logo {
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 151px;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+button {
+    background-image: url(images/GJ_square01-uhd.png);
+    font-family: pusab;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 180px 38px;
+    font-size: medium;
+    text-wrap: wrap;
+    /* transform: scale(1, 1); */
+    text-align: center;
+    border: none;
+    padding: 10px;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+button:active {
+    filter: brightness(60%);
+}
+
+::selection {
+    background-color: greenyellow;
+}
+
+::-moz-selection {
+    background-color: greenyellow;
+}
+
+.winIcon {
+    font-family: webdings;
+}
+
+#fullscreenBttn, #refreshBttn {
+    background-size: 38px 38px;
+}
+
+#note {
+    opacity: 30%;
+    font-size: smaller;
+}
